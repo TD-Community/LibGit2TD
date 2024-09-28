@@ -18,6 +18,10 @@ More info on LibGit2 can be found here:
 
 https://libgit2.org/
 
+**LibGit2** is a standalone library that implements Git functionality in a C-based API, and it does not depend on an external Git installation. You can use LibGit2 in your applications without having Git installed on your system.
+
+All Git operations (like cloning, committing, branching, etc.) are handled internally by LibGit2, so it provides the necessary functionality without requiring the Git command-line tool.
+
 ## What Can This TD Binding Do?
 
 This binding enables Team Developer applications to:

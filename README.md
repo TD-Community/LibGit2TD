@@ -74,27 +74,23 @@ Set bOk = uGit.GIT_repository_discover( "c:\\temp\\myrepo\\documents\\", sGitRoo
 
 When c:\temp\myrepo contains a Git repository the function gives back the Git root folder.
 
-```sqlwindows
-Set bOk = uGit.GIT_libgit2_init( nRet )
-Set bOk = uGit.GIT_clone( "https://github.com/TD-Community/WinAPI_Declarations.git",
-       "c:\\temp\\myrepo", nRepoPtr, nRet )
-```
-
 ## Installation
 
 1. Download and include the **LibGit2 binding** library **LibGit2TD.apl** in your TD project.
-2. Ensure that you have the **LibGit2TD.dll** library installed. Normally placed within the application runtime folder.
+2. Ensure that you have the **LibGit2TD.dll** library available. Normally placed within the application runtime folder.
 3. Start using Git commands within your TD environment.
 
 ## Requirements
 
 - **Team Developer**: This binding is designed to be used within **Team Developer (SqlWindows)** version 5.1 and up.
-- **LibGit2TD.dll**: You need to have this installed on your system, as this binding interacts directly with the library.
 - **LibGit2TD.apl**: Include library to be added to your projects.
+- **LibGit2TD.dll**: You need to have this deployed with your application, as this binding interacts directly with the library.
+
+(Git does not need to be installed)
 
 ## Test application
 
-The LibGit2TD project contains a tester application which shows some exmaples how kto use the API.
+The LibGit2TD project contains a tester application which shows some examples how to use the API.
 
 **LibGit2TD_Tester.apt**
 

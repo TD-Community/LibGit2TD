@@ -1,6 +1,6 @@
 # LibGit2 Binding for Team Developer (SqlWindows)
 
-This project provides a language binding for **LibGit2**, making it possible to integrate Git functionality into **Team Developer (TD)** applications, also known as **SqlWindows**. It enables TD developers to leverage the full power of Git directly from their TD projects using a simple and intuitive API.
+This project provides a language binding for **LibGit2**, making it possible to integrate Git functionality into **Team Developer (TD)** applications, also known as **SqlWindows**. It enables TD developers to leverage the full power of Git directly from their TD projects.
 
 ## What is LibGit2?
 

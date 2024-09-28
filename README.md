@@ -22,7 +22,7 @@ https://libgit2.org/
 
 All Git operations (like cloning, committing, branching, etc.) are handled internally by LibGit2, so it provides the necessary functionality without requiring the Git command-line tool.
 
-## What Can This TD Binding Do?
+## What can this TD binding do?
 
 This binding enables Team Developer applications to:
 

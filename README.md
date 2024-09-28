@@ -52,13 +52,27 @@ To use this binding, simply include the provided **LibGit2TD.apl** library in yo
 
 Here’s an example of how you can clone a repository within your TD application using LibGit2TD:
 
-Create an instance of class cfcLibGit2TDExt (local/global variable): wuGit
+Create an instance of class cfcLibGit2TDExt (local/global variable): uGit
 
 ```sqlwindows
 cfcLibGit2TDExt: uGit
 ```
 
 Call the available LibGit2 functions:
+
+```sqlwindows
+Set bOk = uGit.GIT_libgit2_init( nRet )
+Set bOk = uGit.GIT_clone( "https://github.com/TD-Community/WinAPI_Declarations.git",
+       "c:\\temp\\myrepo", nRepoPtr, nRet )
+```
+
+Here is an example to detect whether a folder is part of a Git repository:
+
+```sqlwindows
+Set bOk = uGit.GIT_repository_discover( "c:\\temp\\myrepo\\documents\\", sGitRootFolder, nRet )
+```
+
+When c:\temp\myrepo contains a Git repository the function gives back the Git root folder.
 
 ```sqlwindows
 Set bOk = uGit.GIT_libgit2_init( nRet )
@@ -78,9 +92,20 @@ Set bOk = uGit.GIT_clone( "https://github.com/TD-Community/WinAPI_Declarations.g
 - **LibGit2TD.dll**: You need to have this installed on your system, as this binding interacts directly with the library.
 - **LibGit2TD.apl**: Include library to be added to your projects.
 
+## Test application
+
+The LibGit2TD project contains a tester application which shows some exmaples how kto use the API.
+
+**LibGit2TD_Tester.apt**
+
+As this project is work-in-progress, more tests will be added in future when more of LibGit2 features are exposed.
+
+
 ## Contribution
 
 Feel free to contribute to this project by submitting issues or pull requests. We welcome enhancements, bug fixes, and feature requests.
+More LibGit2 features need to be added to LibGit2TD and when you are able to pick those missing parts and implement them that would be great.
+If you like to be an official contributor you can be added to this project.
 
 ## License
 
@@ -89,12 +114,8 @@ This project is licensed under the [MIT License](LICENSE).
 ---
 
 ## TD Community Forum
-Join the TD Community Forum for everything related to Gupta Team Developer for related questions, answers and info.
+Join the TD Community Forum for everything related to Gupta Team Developer for questions, answers and info.
 
 https://forum.tdcommunity.net
-
-If you like this project and want to enhance/improve it please do so.
-Any help is appreciated. Changes to this project can be done by pull requests.
-Like to be an official contributor, contact me to be added as contributor of this project.
 
 Find me as Dave Rabelink on the forum mentioned above.

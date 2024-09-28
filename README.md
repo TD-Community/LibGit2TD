@@ -61,9 +61,9 @@ cfcLibGit2TDExt: uGit
 Call the available LibGit2 functions:
 
 ```sqlwindows
-Set bOk = wuGit.GIT_libgit2_init( nRet )
-Set bOk = wuGit.GIT_clone( "https://github.com/TD-Community/WinAPI_Declarations.git", "c:\\temp\\myrepo", nRepoPtr, nRet )
-
+Set bOk = uGit.GIT_libgit2_init( nRet )
+Set bOk = uGit.GIT_clone( "https://github.com/TD-Community/WinAPI_Declarations.git",
+       "c:\\temp\\myrepo", nRepoPtr, nRet )
 ```
 
 ## Installation

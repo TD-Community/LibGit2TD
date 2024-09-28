@@ -1,0 +1,26 @@
+# Executables
+*.exe filter=lfs diff=lfs merge=lfs -text
+
+# Assima .THE files
+*.the filter=lfs diff=lfs merge=lfs -text
+
+# DLL files
+*.dll filter=lfs diff=lfs merge=lfs -text
+
+# jpg files
+*.jpg filter=lfs diff=lfs merge=lfs -text
+
+# jpeg files
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+
+# png files
+*.png filter=lfs diff=lfs merge=lfs -text
+
+# gif files
+*.gif filter=lfs diff=lfs merge=lfs -text
+
+# svg files
+*.svg filter=lfs diff=lfs merge=lfs -text
+
+# zip files
+*.zip filter=lfs diff=lfs merge=lfs -text

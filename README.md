@@ -52,9 +52,16 @@ To use this binding, simply include the provided **LibGit2TD.apl** library in yo
 
 Here’s an example of how you can clone a repository within your TD application using LibGit2TD:
 
-```sqlwindows
-// Pseudo-code in TD to clone a repository
+Create an instance of class cfcLibGit2TDExt (local/global variable): wuGit
 
+```sqlwindows
+cfcLibGit2TDExt: uGit
+	Class: cfcLibGit2TDExt
+```
+
+Call the available LibGit2 functions:
+
+```sqlwindows
 Set bOk = wuGit.GIT_libgit2_init( nRet )
 Set bOk = wuGit.GIT_clone( "https://github.com/TD-Community/WinAPI_Declarations.git", "c:\\temp\\myrepo", nRepoPtr, nRet )
 

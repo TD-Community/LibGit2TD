@@ -56,7 +56,6 @@ Create an instance of class cfcLibGit2TDExt (local/global variable): wuGit
 
 ```sqlwindows
 cfcLibGit2TDExt: uGit
-	Class: cfcLibGit2TDExt
 ```
 
 Call the available LibGit2 functions:

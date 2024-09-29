@@ -1,5 +1,4 @@
-![Language]([https://img.shields.io/badge/Team_Developer-Sql%20Windows_TD%205.1%20and%20up-red](https://img.shields.io/badge/Gupta_Team_Developer-SqlWindows_TD%205.1%20and%20up-red?style=plastic&labelColor=blue))
-
+![Language](https://img.shields.io/badge/Gupta_Team_Developer-SqlWindows_TD%205.1%20and%20up-red?style=plastic&labelColor=blue)
 
 # LibGit2 Binding for Team Developer (SqlWindows)
 

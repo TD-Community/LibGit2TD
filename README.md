@@ -1,3 +1,5 @@
+![Language](https://img.shields.io/badge/Team_Developer-Sql%20Windows_TD%205.1%20and%20up-red)
+
 # LibGit2 Binding for Team Developer (SqlWindows)
 
 This project provides a language binding for **LibGit2**, making it possible to integrate Git functionality into **Team Developer (TD)** applications, also known as **SqlWindows**. It enables TD developers to leverage the full power of Git directly from their TD projects.
